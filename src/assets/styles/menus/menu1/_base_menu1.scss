@@ -1,0 +1,60 @@
+@use '../../mixins' as mixin;
+
+.menu1{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+@include mixin.xs {
+  justify-content: space-between;
+
+ }
+ img {
+  order: -1; // Assure que le logo est toujours le premier élément
+}
+
+  nav{
+    ul{
+        display:flex;
+        flex-direction: row;
+        li{
+            margin:5px;
+            text-align: center;
+            font-weight: 300;
+
+        }
+        li a{
+            color: var(--gray-1);
+            text-decoration:none;
+            padding: 5px;;
+        }
+        li a:hover{
+            color: white;
+            background-color: var(--primary);
+            cursor: pointer;
+            padding:5px;
+            transition: background-color 0.5s ease;
+            
+        }
+    }
+  }
+  .burger-icon {
+    display: none; // caché par défaut
+  
+    @include mixin.xs {
+      display: block; 
+      order: 2;
+    }
+  }
+  
+  nav ul {
+    @include mixin.xs {
+      display: none; // le menu principal est caché sur les petits écrans
+    }
+  }
+
+}
+
+

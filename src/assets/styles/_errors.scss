@@ -1,0 +1,12 @@
+
+input {
+    border: 2px solid currentcolor;
+  }
+  input:invalid {
+    background-color: red;
+  }
+
+  .textError{
+color:red;
+font-size: 0.9rem;
+  }

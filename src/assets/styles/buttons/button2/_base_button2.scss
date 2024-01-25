@@ -1,0 +1,90 @@
+.btn2{
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.2s opacity;
+    margin:10px;
+    &:hover{
+        opacity:0.6;
+    }
+    a{
+        text-decoration:none;
+        color:white;
+    }
+    .btn2-font-style{
+        font-family:var(--font-family);
+        font-size: 1rem;
+    }
+    .btn2-icon{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        i{
+            font-size: 0.8rem;
+        }
+    }
+    
+}
+
+.btn3{
+    display: inline-flex;
+    align-items: center; /* This will vertically align the flex items */
+    justify-content: center; /* This will horizontally align the flex items */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Keeps the child elements within the rounded corners */
+    &:hover{
+        opacity:0.6;
+    }
+    a{
+        text-decoration:none;
+        color:white;
+    }
+
+    .btn3-icon-back{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; 
+        font-size: 16px;
+        padding: 10px;
+        color: var(--primary);
+        border:1px solid var(--primary);
+        background-color: white; /* Replace with the right side color */
+        border-radius: 0 20px 20px 0; /* Rounded corner on the right side */
+        
+    }
+    .btn3-text{
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10px 20px;
+        background-color: var(--primary); /* Replace with the left side color */
+        border-radius: 20px 0 0 20px; /* Rounded corner on the left side */
+        font-size: 14px;
+        border:1px solid var(--primary);
+    }
+    .reverse-color-text{
+        background-color: white !important;
+        color: var(--primary) !important;
+    }
+    .reverse-color-icon-back{
+        background-color: var(--primary) !important;
+        color:white !important;
+    }
+    .btn3-text-danger{
+        border:1px solid var(--danger);
+        color: var(--danger)!important;
+    }
+    .btn3-back-danger{
+        background-color: var(--danger) !important;
+        border:1px solid var(--danger);
+    }
+}

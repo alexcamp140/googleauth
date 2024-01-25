@@ -1,0 +1,32 @@
+
+
+#card2-container{
+   width:100%;
+   display: flex;
+   justify-content:center;
+   flex-direction: row;
+   flex-wrap: wrap;
+    .card2{
+        width: 200px;
+        min-height: 200px;
+        max-height: 400px;
+        background-color: var(--gray-2);
+        border: 1px solid var(--gray-1);
+        border-radius: 5px;
+        box-shadow: 10px 5px 5px var(--gray-2);
+        padding: 10px;
+        margin:10px;
+        img{
+         border-radius: 5px;
+         box-shadow: 10px 5px 5px var(--gray-2);
+        }
+     .card2-p{
+        font: 1rem sans-serif;
+        text-align: justify;
+     }
+     .card2-title{
+        font: 1.2rem sans-serif;
+        margin-bottom:2rem;
+     }
+    }
+}
